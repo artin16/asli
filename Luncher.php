@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '**TOKEN**');
+define('BOT_TOKEN', '248379659:AAEOfzFjpVp1jdQ9KVkh3uSUuUSEm5Sb7HY');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -115,7 +115,7 @@ function processMessage($message) {
   // process incoming message
   $boolean = file_get_contents('booleans.txt');
   $booleans= explode("\n",$boolean);
-  $admin = **ADMIN**;
+  $admin = 222978403;
   $message_id = $message['message_id'];
   $rpto = $message['reply_to_message']['forward_from']['id'];
   $chat_id = $message['chat']['id'];
@@ -725,7 +725,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
         'resize_keyboard' => true)));
     }
     else if ($text == "🔙 Back" && $chat_id==$admin) {
-    		apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => 'سلام قربان حوش آمدید😉
+    		apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => 'سلام قربخ مدید😉
 برای پاسخ روی پیام مورد نظر ریپلای کنید و متن خود را بنویسید 😎
 برای آشنایی دکمه ی ⚓️ Help️ را بزنید 👌😃
 .', 'reply_markup' => array(
